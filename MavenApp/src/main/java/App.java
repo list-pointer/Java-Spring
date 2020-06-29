@@ -6,7 +6,8 @@ public class App {
         System.out.println("hello");
 //        Car car=new Car();
 //        car.drive();
-        ApplicationContext context=new ClassPathXmlApplicationContext();
-        Vehicle obj=(Vehicle)context.getBean("vechile"); 
+        ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
+        Vehicle obj=(Vehicle)context.getBean("vehicle");
+        obj.drive();
     }
 }
