@@ -1,5 +1,8 @@
 package com.mavenappusingannoation.mavenappusingannoation;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Tyre {
     private String brand;
 //    Tyre(String brand)
