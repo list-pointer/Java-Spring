@@ -1,5 +1,8 @@
 package com.anno.anno;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SnapDragon implements MobileProcessor{
 
     @Override
