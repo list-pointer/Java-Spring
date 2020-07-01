@@ -1,11 +1,13 @@
 package com.anno.anno;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Samsung {
     @Autowired
+    @Qualifier("snapDragon")
     MobileProcessor cpu;
 
     public MobileProcessor getCpu() {
